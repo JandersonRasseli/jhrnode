@@ -4,7 +4,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.get('/', function (req, res) {
-  res.send('Jandinho no NODE!!');
+  res.send('Janderson no NODE!!');
 });
 
 var porta = process.env.PORT || 3001;
