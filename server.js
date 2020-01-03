@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const fetch = require('node-fetch')
 
-const url = 'http://177.91.195.245/'
+const url = 'http://177.91.195.245:8080'
 //const url = 'http://172.17.210.225/' 
 let valor = ''
 const request = async () => {
