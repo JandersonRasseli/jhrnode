@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-//const fetch = require('node-fetch')
-let valor = 0
-/*
+
+/*const fetch = require('node-fetch')
+
 const url = 'http://177.91.195.245:8080'
 //const url = 'http://172.17.210.225/' 
 let valor = ''
@@ -13,9 +13,10 @@ const request = async () => {
   valor = retorno.slice(retorno.search("<h3>")+4, retorno.search("</h3>"))
   console.log(valor)
 }.query
+
 */
 
-app.get('/esp', function (req, res) {
+app.get('/', function (req, res) {
   //request();
   res.send("<html> "+
            "  <head> "+
@@ -23,18 +24,11 @@ app.get('/esp', function (req, res) {
            "  </head> "+
            "  <body> "+
            "    <div> "+
-           "      <h1>Nível 2</h1> "+
-           "      <div>"+valor+"</div> "+
+           "      <h1>Nível 3</h1> "+
+           "      <div>"+req.query.valor+"</div> "+
            "    </div> "+
            "  </body> "+
            "</html>")
-});
-
-app.get('/', function (req, res) {
-  
-  valor = req.query
-  
-  res.send("OK")
 });
 
 var porta = process.env.PORT || 3001
