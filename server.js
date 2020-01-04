@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
            "  </head> "+
            "  <body> "+
            "    <div> "+
-           "      <h1>Nível 6</h1> "+
+           "      <h1>Luminosidade</h1> "+
            "      <div>"+valor+"</div> "+
            "    </div> "+
            "  </body> "+
