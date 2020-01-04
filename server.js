@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
   res.send(" <html> "+
            "  <head> "+
            "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=2 /> "+
-           "    <title>teste</title> "+
+           "    <title>Luminosidade Remota</title> "+
            "  </head> "+
            "  <body> "+
            "    <div> "+
