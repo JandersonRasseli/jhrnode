@@ -5,20 +5,12 @@ let valor = 0
 
 app.get('/esp', function (req, res) {
   valor = req.query.vl
-  res.send("<html> "+
-           "  <head> "+
-           "    <title>teste</title> "+
-           "  </head> "+
-           "  <body> "+
-           "    <div> "+
-           "      <h1>OK</h1> "+
-           "    </div> "+
-           "  </body> "+
-           "</html>")
+  //console.log(req.query)
+  res.end('Ok')  
 });
 
 app.get('/', function (req, res) {
-  res.send("<html> "+
+  res.send(" <html> "+
            "  <head> "+
            "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=2 /> "+
            "    <title>teste</title> "+
