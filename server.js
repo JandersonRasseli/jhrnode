@@ -5,12 +5,8 @@ let valor = 0
 
 app.get('/esp', function (req, res) {
   valor = req.query.vl
-  
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/plain')
-  
-  //console.log(req.query)
-  res.end('Ok')  
+  console.log(req.query)
+  res.end('Ok')
 });
 
 app.get('/', function (req, res) {
