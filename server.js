@@ -6,7 +6,7 @@ let valor = 0
 app.get('/esp', function (req, res) {
   valor = req.query.vl
   console.log(req.query)
-  res.end('Ok')
+  res.end(req.query)
 });
 
 app.get('/', function (req, res) {
