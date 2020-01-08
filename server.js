@@ -9,6 +9,13 @@ app.get('/esp', function (req, res) {
   res.end(req.query.vl)
 });
 
+app.post('/esp:vl', function (req, res) {
+  valor = req.params.vl
+  console.log(req.params.vl)
+  //console.log(req.body.vl)
+  res.end("Resposta")  
+});
+
 app.get('/', function (req, res) {
   res.send(" <html> "+
            "  <head> "+
