@@ -3,13 +3,13 @@ const app = express();
 
 let valor = 0
 
-app.get('/esp', function (req, res) {
+app.get('/alt', function (req, res) {
   valor = req.query.vl
   console.log(req.query)
   res.end(req.query.vl)
 });
 
-app.post('/', function (req, res) {
+app.post('/atual', function (req, res) {
   //valor = req.params.vl
   valor = 1302
   //console.log(req.params.vl)
@@ -17,7 +17,7 @@ app.post('/', function (req, res) {
   res.end("Resposta")  
 });
 
-app.get('/', function (req, res) {
+app.get('/ver', function (req, res) {
   res.send(" <html> "+
            "  <head> "+
            "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=2 /> "+
