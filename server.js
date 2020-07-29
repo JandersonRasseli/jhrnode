@@ -21,11 +21,11 @@ app.get('/ver', function (req, res) {
   res.send(" <html> "+
            "  <head> "+
            "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=2 /> "+
-           "    <title>Luminosidade Remota</title> "+
+           "    <title>Nível de Água</title> "+
            "  </head> "+
            "  <body> "+
            "    <div> "+
-           "      <h1>Luminosidade</h1> "+
+           "      <h1>Nível</h1> "+
            "      <div>"+valor+"</div> "+
            "    </div> "+
            "  </body> "+
