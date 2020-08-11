@@ -26,7 +26,7 @@ app.get('/ver', function (req, res) {
            "  <body> "+
            "    <div> "+
            "      <h1>Nível</h1> "+
-           "      <div><img src=".\Nivel_3.jpg" alt="Nível de Água" width="500" height="600"> </div> "+
+           "      <div><img src="Nivel_3.jpg" alt="Nível de Água" width="500" height="600"> </div> "+
            "    </div> "+
            "  </body> "+
            "</html>")
