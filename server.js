@@ -3,7 +3,7 @@ const app = express();
 
 let valor = 0
 
-app.use(express.static('./jhrnode/public')); //geralmente isso aqui funciona vc só precisa por o seu caminho certinho
+app.use(express.static('public'));
 
 app.get('/alt', function (req, res) {
   valor = req.query.vl
@@ -28,7 +28,7 @@ app.get('/ver', function (req, res) {
            "  <body> "+
            "    <div> "+
            "      <h1>Nível</h1> "+
-           "      <div><img src=urlBase'/Nivel_3.jpg' alt='Nível Água 5' width='400' height='500' /> </div> "+
+           "      <div><img src='./public/Nivel_3.jpg' alt='Nível Água 6' width='400' height='500' /> </div> "+
            "    </div> "+
            "  </body> "+
            "</html>")
