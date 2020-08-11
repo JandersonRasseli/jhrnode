@@ -20,13 +20,13 @@ app.post('/atual', function (req, res) {
 app.get('/ver', function (req, res) {
   res.send(" <html> "+
            "  <head> "+
-           "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=2 /> "+
+           "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
            "    <title>Nível de Água</title> "+
            "  </head> "+
            "  <body> "+
            "    <div> "+
            "      <h1>Nível</h1> "+
-           "      <div><img src='/Nivel_3.jpg' alt='Nível Água 4' width='400' height='500' /> </div> "+
+           "      <div><img src='/Nivel_3.jpg' alt='Nível Água 5' width='400' height='500' /> </div> "+
            "    </div> "+
            "  </body> "+
            "</html>")
