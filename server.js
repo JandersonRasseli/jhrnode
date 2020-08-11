@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+process.env.PWD = process.cwd()
+app.use(express.static(process.env.PWD + '/public'));
+
 let valor = 0
 
 app.get('/alt', function (req, res) {
