@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static(path.join(__dirname, '/public')));
-
 let valor = 0
 
 app.get('/alt', function (req, res) {
@@ -28,7 +26,7 @@ app.get('/ver', function (req, res) {
            "  <body> "+
            "    <div> "+
            "      <h1>Nível</h1> "+
-           "      <div><img src='/Nivel_3.jpg' alt='Nível Água 3' width='400' height='500' /> </div> "+
+           "      <div><img src='/Nivel_3.jpg' alt='Nível Água 4' width='400' height='500' /> </div> "+
            "    </div> "+
            "  </body> "+
            "</html>")
