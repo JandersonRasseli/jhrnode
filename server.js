@@ -3,7 +3,7 @@ const app = express();
 
 let valor = 0
 
-app.use(express.static('./JandersonRasseli/jhrnode/blob/master'));
+app.use(express.static('public'));
 
 app.get('/alt', function (req, res) {
   valor = req.query.vl
@@ -28,7 +28,7 @@ app.get('/ver', function (req, res) {
            "  <body> "+
            "    <div> "+
            "      <h1>Nível</h1> "+
-           "      <div><img src='/Nivel_3.jpg' alt='Nível Água 6' width='400' height='500' /> </div> "+
+           "      <div><img src='/Nivel_3.jpg' /> </div> "+
            "    </div> "+
            "  </body> "+
            "</html>")
