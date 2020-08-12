@@ -20,7 +20,7 @@ app.post('/atual', function (req, res) {
 });
 
 app.get('/ver', function (req, res) {
-  if (valor == "LLL"){
+  if (valor == "LLL")
     res.send(" <html> "+
              "  <head> "+
              "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
@@ -33,8 +33,8 @@ app.get('/ver', function (req, res) {
              "    </div> "+
              "  </body> "+
              "</html>")
-  }
-  if (valor == "LLD"){
+  
+  if (valor == "LLD")
     res.send(" <html> "+
              "  <head> "+
              "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
@@ -47,8 +47,8 @@ app.get('/ver', function (req, res) {
              "    </div> "+
              "  </body> "+
              "</html>")
-  }
-  if (valor == "LDD"){
+  
+  if (valor == "LDD")
     res.send(" <html> "+
              "  <head> "+
              "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
@@ -61,8 +61,8 @@ app.get('/ver', function (req, res) {
              "    </div> "+
              "  </body> "+
              "</html>")
-  }  
-  if (valor == "DDD"){
+  
+  if (valor == "DDD")
     res.send(" <html> "+
              "  <head> "+
              "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
@@ -75,7 +75,7 @@ app.get('/ver', function (req, res) {
              "    </div> "+
              "  </body> "+
              "</html>")
-  }
+  
 });
 
 var porta = process.env.PORT || 3001
