@@ -3,7 +3,7 @@ const app = express();
 
 let valor = 0
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'))
 
 app.get('/alt', function (req, res) {
   valor = req.query.vl
