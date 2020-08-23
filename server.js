@@ -34,7 +34,7 @@ app.get('/teste', function (req, res) {
              "  </head> "+
              "  <body> "+
              "    <div> "+
-             "      <img src='../Nivel_0.jpg' alt='Teste2' width='500' height='600'> "+
+             "      <img src='https://github.com/JandersonRasseli/jhrnode/blob/master/Nivel_0.jpg' alt='Teste2' width='500' height='600'> "+
              "    </div> "+
              "  </body> "+
              "</html>")
