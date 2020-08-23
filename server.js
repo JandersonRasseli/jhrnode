@@ -29,12 +29,12 @@ app.get('/ver', function (req, res) {
 app.get('/teste', function (req, res) {
     res.send(" <html> "+
              "  <head> "+
-             "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
+             "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=0 /> "+
              "    <title>Nível de Água</title> "+
              "  </head> "+
              "  <body> "+
              "    <div> "+
-             "      <img src="Nivel_0.jpg" alt="Teste" width="500" height="600"> "+
+             "      <img src='Nivel_0.jpg' alt='Teste' width='500' height='600'> "+
              "    </div> "+
              "  </body> "+
              "</html>")
