@@ -27,14 +27,26 @@ app.get('/ver', function (req, res) {
 });
 
 app.get('/teste', function (req, res) {
+    let imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_0.jpg'";
+    if (valor == "L.L.L") {
+      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_3.jpg'";
+    }
+    if (valor == "L.L.D") {
+      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_1.jpg'";
+    }
+    if (valor == "L.D.D") {
+      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_2.jpg'";
+    }
+
     res.send(" <html> "+
              "  <head> "+
              "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=5 /> "+
              "    <title>Nível de Água</title> "+
              "  </head> "+
              "  <body> "+
+             "      <div>"+valor+"</div> "+
              "    <div> "+
-             "      <img src='https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_0.jpg' alt='Teste4' width='500' height='600'> "+
+             "      <img src="+imagem+" alt='Teste4' width='500' height='600'> "+
              "    </div> "+
              "  </body> "+
              "</html>")
