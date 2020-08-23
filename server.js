@@ -11,14 +11,6 @@ app.get('/alt', function (req, res) {
   res.end(req.query.vl)
 });
 
-app.post('/atual', function (req, res) {
-  //valor = req.params.vl
-  valor = 1302
-  //console.log(req.params.vl)
-  //console.log(req.body.vl)
-  res.end("Resposta")  
-});
-
 app.get('/ver', function (req, res) {
     res.send(" <html> "+
              "  <head> "+
@@ -29,6 +21,20 @@ app.get('/ver', function (req, res) {
              "    <div> "+
              "      <h1>Nível</h1> "+
              "      <div>"+valor+"</div> "+
+             "    </div> "+
+             "  </body> "+
+             "</html>")
+});
+
+app.get('/teste', function (req, res) {
+    res.send(" <html> "+
+             "  <head> "+
+             "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
+             "    <title>Nível de Água</title> "+
+             "  </head> "+
+             "  <body> "+
+             "    <div> "+
+             "      <img src="img_girl.jpg" alt="Teste" width="500" height="600"> "+
              "    </div> "+
              "  </body> "+
              "</html>")
