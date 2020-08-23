@@ -29,6 +29,7 @@ app.get('/ver', function (req, res) {
              "    <div> "+
              "      <h1>Nível</h1> "+
              "      <div>"+valor+"</div> "+
+             "      <img src="img_girl.jpg" alt="Teste" width="500" height="600"> "+
              "    </div> "+
              "  </body> "+
              "</html>")
