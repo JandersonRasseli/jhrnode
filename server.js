@@ -32,10 +32,10 @@ app.get('/teste', function (req, res) {
       imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_3.jpg'";
     }
     if (valor == "L.L.D") {
-      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_1.jpg'";
+      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_2.jpg'";
     }
     if (valor == "L.D.D") {
-      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_2.jpg'";
+      imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_1.jpg'";
     }
 
     res.send(" <html> "+
