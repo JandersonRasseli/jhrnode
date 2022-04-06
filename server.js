@@ -10,7 +10,7 @@ app.get('/alt', function (req, res) {
   valor = 100
 
   console.log(req.query)
-  res.end(req.query.vl)
+  res.end(valor)
 });
 
 app.get('/ver', function (req, res) {
