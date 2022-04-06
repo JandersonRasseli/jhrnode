@@ -6,7 +6,9 @@ let valor = 0
 app.use(express.static(__dirname + '/public'))
 
 app.get('/alt', function (req, res) {
-  valor = req.query.vl
+  //valor = req.query.vl
+  valor = 100
+
   console.log(req.query)
   res.end(req.query.vl)
 });
