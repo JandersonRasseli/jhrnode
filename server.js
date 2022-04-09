@@ -14,7 +14,7 @@ app.get('/alt', function (req, res) {
 app.get('/ver', function (req, res) {
     res.send(" <html> "+
              "  <head> "+
-             "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=10 /> "+
+             "    <meta charset= \'UTF-8\' http-equiv=\'refresh\' content=3 /> "+
              "    <title>Nível de Água</title> "+
              "  </head> "+
              "  <body> "+
