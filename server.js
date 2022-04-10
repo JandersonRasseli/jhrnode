@@ -26,7 +26,7 @@ app.get('/ver', function (req, res) {
              "  </body> "+
              "</html>")
 });
-/*
+
 app.get('/db', function (req, res) {
   (async () => {
     console.log('ini');
@@ -37,8 +37,7 @@ app.get('/db', function (req, res) {
     const clientes = await db.selectCustomers();
     console.log(clientes);
     res.end('testessss');
-  })()};        
-*/
+  })()};
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
