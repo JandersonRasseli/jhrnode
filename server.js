@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const db = require("./db");
+//const db = require("./db");
 
 let valor = 0
 
@@ -26,7 +26,7 @@ app.get('/ver', function (req, res) {
              "  </body> "+
              "</html>")
 });
-
+/*
 app.get('/db', function (req, res) {
   (async () => {
     console.log('ini');
@@ -38,6 +38,7 @@ app.get('/db', function (req, res) {
     console.log(clientes);
     res.end('testessss');
   })()};        
+*/
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
