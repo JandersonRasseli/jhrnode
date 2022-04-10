@@ -28,7 +28,9 @@ app.get('/ver', function (req, res) {
 });
 
 app.get('/jand', function (req, res) {
-  res.end(req.query.vl)
+  const db = require("./db");
+  const clientes = await db.selectCustomers();
+  res.end(clientes);
 });
 
 var porta = process.env.PORT || 3001
