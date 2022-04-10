@@ -20,7 +20,7 @@ app.get('/ver', function (req, res) {
              "  </head> "+
              "  <body> "+
              "    <div> "+
-             "      <h1>Nível ...</h1> "+
+             "      <h1>Nível ooo</h1> "+
              "      <div>"+valor+"</div> "+
              "    </div> "+
              "  </body> "+
@@ -28,7 +28,7 @@ app.get('/ver', function (req, res) {
 });
 
 app.get('/jand', function (req, res) {
-  res.end('teste')
+  res.end(req.query.vl)
 });
 
 var porta = process.env.PORT || 3001
