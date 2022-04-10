@@ -20,7 +20,7 @@ app.get('/ver', function (req, res) {
              "  </head> "+
              "  <body> "+
              "    <div> "+
-             "      <h1>Nível #</h1> "+
+             "      <h1>Nível #0</h1> "+
              "      <div>"+valor+"</div> "+
              "    </div> "+
              "  </body> "+
@@ -29,8 +29,8 @@ app.get('/ver', function (req, res) {
 
 app.get('/jand', function (req, res) {
   const db = require("./db");
-  const clientes = await db.selectCustomers();
-  res.end(clientes);
+  //const clientes = await db.selectCustomers();
+  //res.end(clientes);
 });
 
 var porta = process.env.PORT || 3001
