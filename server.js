@@ -28,7 +28,7 @@ app.get('/ver', function (req, res) {
 });
 
 app.get('/jand', function (req, res) {
-    res.send(" jand ")
+  res.end('teste')
 });
 
 var porta = process.env.PORT || 3001
