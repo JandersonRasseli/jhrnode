@@ -20,15 +20,15 @@ app.get('/ver', function (req, res) {
              "  </head> "+
              "  <body> "+
              "    <div> "+
-             "      <h1>Nível</h1> "+
+             "      <h1>Nível ...</h1> "+
              "      <div>"+valor+"</div> "+
              "    </div> "+
              "  </body> "+
              "</html>")
 });
 
-app.get('/db', function (req, res) {
-  console.log('ini');
+app.get('/jand', function (req, res) {
+    res.send(" jand ")
 });
 
 var porta = process.env.PORT || 3001
