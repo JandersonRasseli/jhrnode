@@ -36,7 +36,8 @@ app.get('/db', function (req, res) {
     console.log('SELECT * FROM CLIENTES');
     const clientes = await db.selectCustomers();
     console.log(clientes);
-  })()};
+    res.end('testessss');
+  })()};        
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
