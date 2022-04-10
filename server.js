@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-//const db = require("./db");
+const db = require("./db");
 
 let valor = 0
 
@@ -20,7 +20,7 @@ app.get('/ver', function (req, res) {
              "  </head> "+
              "  <body> "+
              "    <div> "+
-             "      <h1>Nível ooo</h1> "+
+             "      <h1>Nível X db X</h1> "+
              "      <div>"+valor+"</div> "+
              "    </div> "+
              "  </body> "+
