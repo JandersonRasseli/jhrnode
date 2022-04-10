@@ -26,6 +26,16 @@ app.get('/ver', function (req, res) {
              "</html>")
 });
 
+app.get('/db', function (req, res) {
+  (async () => {
+    const db = require("./db");
+    console.log('Começou!');
+
+    console.log('SELECT * FROM CLIENTES');
+    const clientes = await db.selectCustomers();
+    console.log(clientes);
+  })()};
+
 app.get('/teste', function (req, res) {
     let imagem = "'https://raw.githubusercontent.com/JandersonRasseli/jhrnode/master/Nivel_0.jpg'";
     if (valor == "L.L.L") {
