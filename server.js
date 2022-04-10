@@ -29,7 +29,7 @@ app.get('/ver', function (req, res) {
 
 app.get('/db', function (req, res) {
   console.log('ini');
-};
+});
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
