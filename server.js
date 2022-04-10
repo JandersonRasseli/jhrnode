@@ -29,15 +29,7 @@ app.get('/ver', function (req, res) {
 
 app.get('/db', function (req, res) {
   console.log('ini');
-  (async () => {
-    const db = require("./db");
-    console.log('Começou!');
-
-    console.log('SELECT * FROM CLIENTES');
-    const clientes = await db.selectCustomers();
-    console.log(clientes);
-    res.end('testessss');
-  })()};
+};
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
