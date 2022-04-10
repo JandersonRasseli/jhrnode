@@ -28,8 +28,8 @@ app.get('/ver', function (req, res) {
 });
 
 app.get('/db', function (req, res) {
+  console.log('ini');
   (async () => {
-    console.log('ini');
     const db = require("./db");
     console.log('Começou!');
 
