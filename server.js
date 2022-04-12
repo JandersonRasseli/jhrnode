@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const db = require("./db");
 
 let valor = 0
 
@@ -26,11 +25,6 @@ app.get('/ver', function (req, res) {
              "  </body> "+
              "</html>")
 });
-
-app.get('/j', function (req, res) {
-  const clientes = await db.selectCustomers();
-  res.end(clientes);
-}
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
