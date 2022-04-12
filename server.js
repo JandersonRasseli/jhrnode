@@ -27,10 +27,11 @@ app.get('/ver', function (req, res) {
              "</html>")
 });
 
+app.get('/j', function (req, res) {
   const db = require("./db");
-  //const clientes = await db.selectCustomers();
-  //res.end(clientes);
-
+  const clientes = await db.selectCustomers();
+  res.end(clientes);
+}
 
 var porta = process.env.PORT || 3001
 app.listen(porta)
