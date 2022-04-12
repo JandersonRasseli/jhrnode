@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-//const db = require("./db");
+const db = require("./db");
 
 let valor = 0
 
@@ -28,7 +28,6 @@ app.get('/ver', function (req, res) {
 });
 
 app.get('/j', function (req, res) {
-  const db = require("./db");
   const clientes = await db.selectCustomers();
   res.end(clientes);
 }
